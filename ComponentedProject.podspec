@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
   s.subspec 'green' do |green|
     green.source_files = 'ComponentedProject/GreenModule/**/*.{h,m}'
     green.dependency 'ComponentedProject/base'
+    green.dependency 'SDWebImage', '~>4.3.2'
   end
 
   s.subspec 'blue' do |blue|

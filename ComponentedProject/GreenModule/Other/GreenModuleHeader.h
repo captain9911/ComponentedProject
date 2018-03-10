@@ -10,5 +10,6 @@
 #define GreenModuleHeader_h
 
 #import "BaseModuleHeader.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #endif /* GreenModuleHeader_h */
