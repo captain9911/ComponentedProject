@@ -2,8 +2,9 @@
 Pod::Spec.new do |s|
   s.name         = "ComponentedProject"
   s.version      = "0.0.1"
-  s.summary      = "A short description of ComponentedProject."
+  s.summary      = "Componented Project"
   s.description  = <<-DESC
+                    Componentized project management.
                    DESC
   s.homepage     = "https://github.com/captain9911/ComponentedProject.git"
   s.license      = "MIT"
