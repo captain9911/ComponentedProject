@@ -7,6 +7,7 @@
 //
 
 #import "GreenVC.h"
+#import "GreenModuleHeader.h"
 
 @interface GreenVC ()
 
@@ -18,6 +19,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor greenColor];
+    UIImageView *imgView = [UIImageView new];
+    [imgView sd_setImageWithURL:[NSURL URLWithString:@"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1943249770,628140654&fm=200&gp=0.jpg"]];
+    [self.view addSubview:imgView];
+    [imgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(300, 250));
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.top.mas_equalTo(100);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
